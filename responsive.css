@@ -1,0 +1,109 @@
+@media only screen and (max-width: 600px) {
+    .container {
+      width: 85%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+  
+  
+    #hero .container,
+    #highlights .container {
+      height: auto;
+      justify-content: space-around;
+      padding: 40px 0;
+    }
+    #hero .info,
+    #highlights .info {
+      width: 100%;
+    }
+  
+    .info {
+      height: auto;
+    }
+  
+    #hero h1 {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  
+    #hero .image,
+    #highlights .image {
+      width: 100%;
+    }
+  
+    #article .container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    #highlights h1,
+    #match h1,
+    #contact h3 {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 10px;
+    }
+    #match {
+      height: auto;
+      padding: 20px 0 50px;
+    }
+    #match h1{padding-top: 5rem;}
+    #match hr {
+      width: 40%;
+      margin-bottom: 50px;
+    }
+  
+    #match .team,
+    #match .vs {
+      width: 100%;
+    }
+  
+    #match .container {
+      justify-content: space-around;
+    }
+  
+    #contact {
+      height: auto;
+      padding: 40px 0 0;
+    }
+  
+    #contact .container {
+      height: auto;
+      flex-direction: column-reverse;
+      justify-content: space-around;
+    }
+  
+    #contact .form {
+      width: 100%;
+      height: auto;
+    }
+  
+    #contact .image {
+      width: 100%;
+    }
+  
+    #contact img {
+      width: 100%;
+      margin-bottom: -9px;
+    }
+  
+    input,
+    textarea {
+      width: 75%;
+    }
+    footer .img-group {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+    }
+    footer img {
+      width: 50%;
+    }
+    footer i {
+      font-size: 16px;
+    }
+    footer p {
+      font-size: 16px;
+    }
+  }

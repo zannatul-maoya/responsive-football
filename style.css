@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root{
+    --banner-bg:#2D25A0;
+    --button-bg:#E02C6D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background: whitesmoke;
+}
+
+img{
+    width: 100%;
+}
+
+.button{
+    background:var(--button-bg);
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.button:hover{
+    padding: 12px 22px;
+    transition: 0.1s;
+}
+
+.container{
+    width: 1160px;
+    margin: auto;
+}
+
+/* basic css end */
+
+/* hero section css start */
+#hero{
+    background-color: var(--banner-bg);
+}
+
+/* adding highlight section css with hroe section css to reduce repeatation */
+#hero .container, 
+#highlights .container{
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+    align-items: center;
+       
+    color: white;
+}
+
+#hero .info,
+#highlights .info{
+    width: 45%;
+    height: 400px;
+}
+
+#hero .image,
+#highlights .image{
+    width: 50%; 
+}
+
+#hero img, 
+#highlights img{
+ transition: transform 0.2s ease-in-out;
+}
+
+#hero img:hover{
+    transform: translate(-10px, -10px);
+}
+
+#hero h1,
+#highlights h1{
+    font-size: 64px;
+    line-height: 80px;
+    margin-bottom: 30px;
+}
+
+/* hero section css end */
+
+/* article section start */
+#article .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:30px;
+    grid-row-gap:30px;
+    margin: 80px auto; 
+}
+
+article{
+background: white;
+padding: 15px;
+box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.1);
+}
+
+article h3{
+    font-size: 28px;
+}
+/* article section end */
+
+
+
+/* highlight section css start */
+#highlights h1{
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 0;
+}
+
+#highlights p{
+    margin: 20px 0 30px;
+}
+
+#highlights .container{
+    color: black;
+}
+/* highlight section css end */
+
+/* contact section start */
+#contact{
+    background-color: var(--button-bg);
+}
+
+#contact .container{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+}
+
+#contact .image{
+width: 50%;
+padding-left:50px;
+
+}
+
+#contact img{
+   width: 80%;
+   margin-bottom: -95px;
+}
+
+#contact .form{
+    width: 40%;
+    color: white;
+}
+
+.form h3{
+    font-size: 62px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+}
+
+.name, .email, .message{
+    width: 94%;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color:white;
+}
+
+input, textarea{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+    color: var(--banner-bg);
+}
+
+::placeholder{
+    color: var(--banner-bg);
+    font-weight: 100;
+    opacity: 0.5;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#contact i{
+    font-size: 26px;
+    margin-right: 10px;
+    font-weight: 100;
+    color: var(--banner-bg);
+}
+
+.btn-group{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+input[type=submit],
+input[type=reset]{
+    width: 48%;
+    padding: 10px 0;
+    background-color: var(--banner-bg);
+    color: white;
+    
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover{
+    cursor: pointer;
+    background-color: white;
+    color: var(--banner-bg);
+    transition: 0.2s;
+}
+/* contact section end */
+
+
+/*App section start*/
+.app{
+    
+    padding-top:70px;
+    padding-bottom: 100px;
+    background-color: #5a53be;
+    background-repeat: no-repeat;
+    text-align:center;
+}
+
+.appParents{
+    
+    display:flex;
+    margin-left:600px;
+}
+.app h1{
+   color:white;
+   font-size: xx-large;
+}
+.app p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color:white;
+}
+
+
+/*App section end*/
+
+
+/* footer section start */
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+   justify-content: center;
+}
+
+
+footer .img-group{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img{
+    width: 100%;
+       
+}
+
+footer img:first-child{
+    width: 40%;
+}
+
+footer i{
+    font-size: 32px;
+    color: gray;
+    background-color: gainsboro;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 15px;
+}
+
+footer i:last-child{
+    margin-right: 0;
+}
+
+footer p{
+    margin-top: 25px;
+    font-size: 18px;
+}
+/* footer section end */
